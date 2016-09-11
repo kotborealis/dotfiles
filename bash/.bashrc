@@ -44,7 +44,7 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
-export PS1="\[$(tput bold)\]\[\033[38;5;91m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]:\w\\$\[$(tput sgr0)\] "
+export PS1="\[$(tput bold)\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]:\w\\$\[$(tput sgr0)\] "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
