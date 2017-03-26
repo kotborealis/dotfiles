@@ -3,3 +3,5 @@
 	name = kotborealis
 [push]
 	default = simple
+[core]
+	excludesfile = /home/kotborealis/.gitignore_global
