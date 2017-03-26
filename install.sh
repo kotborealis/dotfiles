@@ -1,18 +1,6 @@
-#!/usr/bin/env bash
-
-
-declare -a FILES_TO_SYMLINK=(
-  '.bash_aliases'
-  '.bashrc'
-  '.gitconfig'
-  '.oh-my-zsh'
-  '.zshrc'
-  '.jetbrains'
-)
-
-for i in ${FILES_TO_SYMLINK[@]}; do
-    sourceFile="$(pwd)/$i"
-    targetFile="$HOME/$i"
-
-    ln -fs $sourceFile $targetFile 
-  done
+ln -fs $(pwd)/.bash_aliases $HOME/.bash_aliases
+ln -fs $(pwd)/.bashrc $HOME/.bashrc
+ln -fs $(pwd)/.gitconfig $HOME/.gitconfig
+ln -fs $(pwd)/.zshrc $HOME/.zshrc
+ln -fs $(pwd)/.jetbrains $HOME/.jetbrains
+ln -fs $(pwd)/.oh-my-zsh/custom/kotborealis.zsh-theme $HOME/.oh-my-zsh/custom/kotborealis.zsh-theme
