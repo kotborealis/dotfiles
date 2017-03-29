@@ -141,6 +141,3 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-export NVM_DIR="/home/kotborealis/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
