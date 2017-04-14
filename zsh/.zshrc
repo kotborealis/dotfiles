@@ -86,6 +86,8 @@ zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
+alias ccat="colorize"
+
 extract () {
   if [ -f $1 ] ; then
     case $1 in
