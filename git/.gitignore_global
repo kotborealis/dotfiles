@@ -1,4 +1,0 @@
-*.log
-bower_components
-node_modules/
-.env
