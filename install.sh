@@ -3,3 +3,4 @@ stow git
 stow zsh
 stow vim
 stow ssh
+stow terminator
