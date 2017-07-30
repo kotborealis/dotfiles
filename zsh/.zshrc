@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/kotborealis/.oh-my-zsh
@@ -86,6 +86,8 @@ zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
+alias go="xdg-open &>/dev/null"
+
 alias ccat="colorize"
 
 extract () {
@@ -110,3 +112,6 @@ extract () {
   fi
 }
 
+alias emcc="/home/kotborealis/projects/emsdk-portable/emscripten/1.37.13/emcc"
+
+mount | grep "${HOME}/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/gdrive"
