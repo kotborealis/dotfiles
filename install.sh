@@ -4,4 +4,4 @@ stow zsh
 stow vim
 stow ssh
 stow terminator
-stow rofi
+stow xresources
