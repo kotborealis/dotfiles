@@ -3,7 +3,10 @@
   focus = system
   suppress_multiple_term_dialog = True
   title_hide_sizetext = True
-  title_transmit_bg_color = "#d30102"
+  title_inactive_bg_color = "#e6e6e6"
+  title_inactive_fg_color = "#424242"
+  title_transmit_bg_color = "#9e9e9e"
+  title_transmit_fg_color = "#2d2d2d"
 [keybindings]
 [layouts]
   [[default]]
@@ -20,7 +23,7 @@
     background_color = "#2d2d2d"
     background_image = None
     cursor_color = "#d3d0c8"
-    font = Roboto Mono 10
+    font = Roboto Mono 12
     foreground_color = "#d3d0c8"
     palette = "#2d2d2d:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#d3d0c8:#747369:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#f2f0ec"
     use_system_font = False
