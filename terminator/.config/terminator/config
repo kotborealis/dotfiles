@@ -21,6 +21,7 @@
 [profiles]
   [[default]]
     background_color = "#2d2d2d"
+    background_darkness = -0.2
     background_image = None
     cursor_color = "#d3d0c8"
     font = Roboto Mono 12
