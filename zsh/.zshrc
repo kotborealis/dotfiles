@@ -112,8 +112,6 @@ extract () {
   fi
 }
 
-alias emcc="/home/kotborealis/projects/emsdk-portable/emscripten/1.37.13/emcc"
-
-mount | grep "${HOME}/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/gdrive"
+mount | grep "${HOME}/mnt/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/mnt/gdrive"
 
 alias copy="xclip -sel clip"
