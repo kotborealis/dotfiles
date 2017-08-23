@@ -23,3 +23,6 @@ set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
 
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/goyo.vim'
+call plug#end()
