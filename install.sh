@@ -6,4 +6,4 @@ stow ssh
 stow terminator
 stow xresources
 stow neofetch
-
+stow sublime
