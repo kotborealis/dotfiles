@@ -25,4 +25,5 @@ set notimeout ttimeout ttimeoutlen=200
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/goyo.vim'
+Plug 'arrufat/vala.vim'
 call plug#end()
