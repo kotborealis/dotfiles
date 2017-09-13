@@ -1,9 +1,11 @@
 {
 	"color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
-	"font_size": 12,
+	"font_size": 13,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme": "Arc-Dark-Master.sublime-theme"
+	"theme": "Arc-Dark-Master.sublime-theme",
+	"default_encoding": "UTF-8",
+	"show_encoding": true,
 }
