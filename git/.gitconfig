@@ -1,8 +1,11 @@
 [user]
 	email = kotborealis@gmail.com
 	name = kotborealis
+	signingkey = 087E3AA4
 [push]
 	default = simple
 [core]
 	excludesfile = /home/kotborealis/.gitignore_global
 	autocrlf = input
+[commit]
+	gpgsign = false

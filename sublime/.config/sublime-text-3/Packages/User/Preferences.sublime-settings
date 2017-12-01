@@ -1,11 +1,37 @@
 {
+	"added_words":
+	[
+		"Раскадровка",
+		"скриншотов",
+		"акторы",
+		"акторов",
+		"актора",
+		"Проверяемость",
+		"трассируемым",
+		"бескоалиционные",
+		"биматричные",
+		"одношаговые",
+		"Неатнагонистические",
+		"",
+		"неантагонистическую",
+		"бескоалиционную",
+		"биматричной",
+		"биматричных",
+		"биматричную",
+		"биматричная",
+		"радиогоризонт",
+		"радиогоризонта",
+		"радиогоризонту",
+		"Угломестная"
+	],
 	"color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
-	"font_size": 13,
+	"default_encoding": "UTF-8",
+	"dictionary": "Packages/russian_english.dic",
+	"font_size": 17,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme": "Arc-Dark-Master.sublime-theme",
-	"default_encoding": "UTF-8",
 	"show_encoding": true,
+	"translate_tabs_to_spaces": true
 }
