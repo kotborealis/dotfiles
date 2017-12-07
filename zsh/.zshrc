@@ -113,4 +113,18 @@ extract () {
 
 mount | grep "${HOME}/mnt/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/mnt/gdrive"
 
+alias ssh='ssh -F ~/.ssh/config_private'
+
 alias copy="xclip -sel clip"
+
+h=()
+if [[ -r ~/.ssh/config ]]; then
+  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
+fi
+if [[ -r ~/.ssh/config_private ]]; then
+  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config_private)"}:#Host *}#Host }:#*[*?]*})
+fi
+if [[ $#h -gt 0 ]]; then
+  zstyle ':completion:*:ssh:*' hosts $h
+  zstyle ':completion:*:slogin:*' hosts $h
+fi
