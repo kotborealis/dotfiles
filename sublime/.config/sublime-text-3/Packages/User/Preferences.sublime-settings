@@ -27,7 +27,7 @@
 	"color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/russian_english.dic",
-	"font_size": 17,
+	"font_size": 19,
 	"ignored_packages":
 	[
 		"Vintage"
