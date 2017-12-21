@@ -1,5 +1,5 @@
 [global_config]
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  enabled_plugins = CustomCommandsMenu, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = system
   geometry_hinting = False
   suppress_multiple_term_dialog = True
@@ -19,6 +19,12 @@
       parent = ""
       type = Window
 [plugins]
+  [[CustomCommandsMenu]]
+    [[[ascii-cinema]]]
+      command = asciinema rec
+      enabled = True
+      name = ascii-cinema
+      position = 0
 [profiles]
   [[default]]
     background_color = "#404552"
@@ -35,3 +41,161 @@
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
+  [[3024 Day]]
+    background_color = "#f7f7f7"
+    background_image = None
+    cursor_color = "#4a4543"
+    foreground_color = "#4a4543"
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+  [[3024 Night]]
+    background_color = "#090300"
+    background_image = None
+    cursor_color = "#a5a2a2"
+    foreground_color = "#a5a2a2"
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+  [[Aci]]
+    background_color = "#0d1926"
+    background_image = None
+    cursor_color = "#c4e9ff"
+    foreground_color = "#b4e1fd"
+    palette = "#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6:#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6"
+  [[Atom]]
+    background_color = "#161719"
+    background_image = None
+    cursor_color = "#d0d0d0"
+    foreground_color = "#c5c8c6"
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+  [[Batman]]
+    background_color = "#1b1d1e"
+    background_image = None
+    cursor_color = "#fcef0c"
+    foreground_color = "#6f6f6f"
+    palette = "#1b1d1e:#e6dc44:#c8be46:#f4fd22:#737174:#747271:#62605f:#c6c5bf:#505354:#fff78e:#fff27d:#feed6c:#919495:#9a9a9d:#a3a3a6:#dadbd6"
+  [[Material]]
+    background_color = "#eaeaea"
+    background_image = None
+    cursor_color = "#16afca"
+    foreground_color = "#232322"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+  [[MaterialDark]]
+    background_color = "#232322"
+    background_image = None
+    cursor_color = "#16afca"
+    foreground_color = "#e5e5e5"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+  [[OneHalfDark]]
+    background_color = "#282c34"
+    background_image = None
+    cursor_color = "#a3b3cc"
+    foreground_color = "#dcdfe4"
+    palette = "#282c34:#e06c75:#98c379:#e5c07b:#61afef:#c678dd:#56b6c2:#dcdfe4:#282c34:#e06c75:#98c379:#e5c07b:#61afef:#c678dd:#56b6c2:#dcdfe4"
+  [[OneHalfLight]]
+    background_color = "#fafafa"
+    background_image = None
+    cursor_color = "#bfceff"
+    foreground_color = "#383a42"
+    palette = "#383a42:#e45649:#50a14f:#c18401:#0184bc:#a626a4:#0997b3:#fafafa:#4f525e:#e06c75:#98c379:#e5c07b:#61afef:#c678dd:#56b6c2:#ffffff"
+  [[Pro]]
+    background_image = None
+    cursor_color = "#4d4d4d"
+    foreground_color = "#f2f2f2"
+    palette = "#000000:#990000:#00a600:#999900:#2009db:#b200b2:#00a6b2:#bfbfbf:#666666:#e50000:#00d900:#e5e500:#0000ff:#e500e5:#00e5e5:#e5e5e5"
+  [[Red Alert]]
+    background_color = "#762423"
+    background_image = None
+    cursor_color = "#ffffff"
+    foreground_color = "#ffffff"
+    palette = "#000000:#d62e4e:#71be6b:#beb86b:#489bee:#e979d7:#6bbeb8:#d6d6d6:#262626:#e02553:#aff08c:#dfddb7:#65aaf1:#ddb7df:#b7dfdd:#ffffff"
+  [[Red Planet]]
+    background_color = "#222222"
+    background_image = None
+    cursor_color = "#c2b790"
+    foreground_color = "#c2b790"
+    palette = "#202020:#8c3432:#728271:#e8bf6a:#69819e:#896492:#5b8390:#b9aa99:#676767:#b55242:#869985:#ebeb91:#60827e:#de4974:#38add8:#d6bfb8"
+  [[Red Sands]]
+    background_color = "#7a251e"
+    background_image = None
+    cursor_color = "#ffffff"
+    foreground_color = "#d7c9a7"
+    palette = "#000000:#ff3f00:#00bb00:#e7b000:#0072ff:#bb00bb:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0072ae:#ff55ff:#55ffff:#ffffff"
+  [[Tomorrow]]
+    background_color = "#ffffff"
+    background_image = None
+    cursor_color = "#4d4d4c"
+    foreground_color = "#4d4d4c"
+    palette = "#000000:#c82829:#718c00:#eab700:#4271ae:#8959a8:#3e999f:#ffffff:#000000:#c82829:#718c00:#eab700:#4271ae:#8959a8:#3e999f:#ffffff"
+  [[Tomorrow Night]]
+    background_color = "#1d1f21"
+    background_image = None
+    cursor_color = "#c5c8c6"
+    foreground_color = "#c5c8c6"
+    palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
+  [[Tomorrow Night Eighties]]
+    background_color = "#2d2d2d"
+    background_image = None
+    cursor_color = "#cccccc"
+    foreground_color = "#cccccc"
+    palette = "#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff:#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff"
+  [[Ubuntu]]
+    background_color = "#300a24"
+    background_image = None
+    cursor_color = "#bbbbbb"
+    foreground_color = "#eeeeec"
+  [[Urple]]
+    background_color = "#1b1b23"
+    background_image = None
+    cursor_color = "#a063eb"
+    foreground_color = "#877a9b"
+    palette = "#000000:#b0425b:#37a415:#ad5c42:#564d9b:#6c3ca1:#808080:#87799c:#5d3225:#ff6388:#29e620:#f08161:#867aed:#a05eee:#eaeaea:#bfa3ff"
+  [[VibrantInk]]
+    background_image = None
+    cursor_color = "#ffffff"
+    foreground_color = "#ffffff"
+    palette = "#878787:#ff6600:#ccff04:#ffcc00:#44b4cc:#9933cc:#44b4cc:#f5f5f5:#555555:#ff0000:#00ff00:#ffff00:#0000ff:#ff00ff:#00ffff:#e5e5e5"
+  [[Violet Light]]
+    background_color = "#fcf4dc"
+    background_image = None
+    cursor_color = "#536870"
+    foreground_color = "#536870"
+    palette = "#56595c:#c94c22:#85981c:#b4881d:#2e8bce:#d13a82:#32a198:#d3d0c9:#45484b:#bd3613:#738a04:#a57705:#2176c7:#c61c6f:#259286:#c9c6bd"
+  [[Wez]]
+    background_image = None
+    cursor_color = "#53ae71"
+    foreground_color = "#b3b3b3"
+    palette = "#000000:#cc5555:#55cc55:#cdcd55:#5555cc:#cc55cc:#7acaca:#cccccc:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+  [[WildCherry]]
+    background_color = "#1f1726"
+    background_image = None
+    cursor_color = "#dd00ff"
+    foreground_color = "#dafaff"
+    palette = "#000507:#d94085:#2ab250:#ffd16f:#883cdc:#ececec:#c1b8b7:#fff8de:#009cc9:#da6bac:#f4dca5:#eac066:#308cba:#ae636b:#ff919d:#e4838d"
+  [[Zenburn]]
+    background_color = "#3f3f3f"
+    background_image = None
+    cursor_color = "#73635a"
+    foreground_color = "#dcdccc"
+    palette = "#4d4d4d:#705050:#60b48a:#f0dfaf:#506070:#dc8cc3:#8cd0d3:#dcdccc:#709080:#dca3a3:#c3bf9f:#e0cf9f:#94bff3:#ec93d3:#93e0e3:#ffffff"
+  [[ayu]]
+    background_color = "#0f1419"
+    background_image = None
+    cursor_color = "#f29718"
+    foreground_color = "#e6e1cf"
+    palette = "#000000:#ff3333:#b8cc52:#e7c547:#36a3d9:#f07178:#95e6cb:#ffffff:#323232:#ff6565:#eafe84:#fff779:#68d5ff:#ffa3aa:#c7fffd:#ffffff"
+  [[ayu_light]]
+    background_color = "#fafafa"
+    background_image = None
+    cursor_color = "#ff6a00"
+    foreground_color = "#5c6773"
+    palette = "#000000:#ff3333:#86b300:#f29718:#41a6d9:#f07178:#4dbf99:#ffffff:#323232:#ff6565:#b8e532:#ffc94a:#73d8ff:#ffa3aa:#7ff1cb:#ffffff"
+  [[deep]]
+    background_color = "#090909"
+    background_image = None
+    cursor_color = "#d0d0d0"
+    foreground_color = "#cdcdcd"
+    palette = "#000000:#d70005:#1cd915:#d9bd26:#5665ff:#b052da:#50d2da:#e0e0e0:#535353:#fb0007:#22ff18:#fedc2b:#9fa9ff:#e09aff:#8df9ff:#ffffff"
+  [[idleToes]]
+    background_color = "#323232"
+    background_image = None
+    cursor_color = "#d6d6d6"
+    foreground_color = "#ffffff"
+    palette = "#323232:#d25252:#7fe173:#ffc66d:#4099ff:#f680ff:#bed6ff:#eeeeec:#535353:#f07070:#9dff91:#ffe48b:#5eb7f7:#ff9dff:#dcf4ff:#ffffff"
