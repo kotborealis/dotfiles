@@ -85,10 +85,10 @@ zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
+# open using default app
 alias go="xdg-open &>/dev/null"
 
-alias ccat="colorize"
-
+# extraction script
 extract () {
   if [ -f $1 ] ; then
     case $1 in
@@ -111,12 +111,13 @@ extract () {
   fi
 }
 
+# mount google drive using ocalmfuse
 mount | grep "${HOME}/mnt/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/mnt/gdrive"
 
+# ssh private config
 alias ssh='ssh -F ~/.ssh/config_private'
 
-alias copy="xclip -sel clip"
-
+# ssh autocompletion
 h=()
 if [[ -r ~/.ssh/config ]]; then
   h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
@@ -128,3 +129,9 @@ if [[ $#h -gt 0 ]]; then
   zstyle ':completion:*:ssh:*' hosts $h
   zstyle ':completion:*:slogin:*' hosts $h
 fi
+
+# copy shortcut
+alias copy="xclip -sel clip"
+
+# hub for github https://hub.github.com/
+alias git="hub"
