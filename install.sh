@@ -7,3 +7,4 @@ stow terminator
 stow xresources
 stow neofetch
 stow sublime
+stow xinitrc
