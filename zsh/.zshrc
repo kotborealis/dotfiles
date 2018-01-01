@@ -14,7 +14,7 @@ ZSH_THEME="kotborealis"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -29,7 +29,7 @@ ZSH_THEME="kotborealis"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -52,6 +52,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git colorize)
+
+fpath=(~/.zsh/completions $fpath) 
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -76,11 +79,7 @@ zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# For a full list of active aliases
 
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
@@ -135,3 +134,11 @@ alias copy="xclip -sel clip"
 
 # hub for github https://hub.github.com/
 alias git="hub"
+
+# per-dir zshrc
+function chpwd() {
+  source $HOME/.zshrc
+  if [ -r $PWD/.zshrc ]; then
+    source $PWD/.zshrc
+  fi
+}
