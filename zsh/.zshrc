@@ -113,16 +113,10 @@ extract () {
 # mount google drive using ocalmfuse
 mount | grep "${HOME}/mnt/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/mnt/gdrive"
 
-# ssh private config
-alias ssh='ssh -F ~/.ssh/config_private'
-
 # ssh autocompletion
 h=()
 if [[ -r ~/.ssh/config ]]; then
   h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
-fi
-if [[ -r ~/.ssh/config_private ]]; then
-  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config_private)"}:#Host *}#Host }:#*[*?]*})
 fi
 if [[ $#h -gt 0 ]]; then
   zstyle ':completion:*:ssh:*' hosts $h
