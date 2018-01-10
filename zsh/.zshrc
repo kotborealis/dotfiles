@@ -57,6 +57,7 @@ fpath=(~/.zsh/completions $fpath)
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/custom/plugins/zsh-autoenv/autoenv.zsh
 
 # User configuration
 
@@ -132,11 +133,3 @@ alias copy="xclip -sel clip"
 
 # hub for github https://hub.github.com/
 alias git="hub"
-
-# per-dir zshrc
-function chpwd() {
-  source $HOME/.zshrc
-  if [ -r $PWD/.zshrc ]; then
-    source $PWD/.zshrc
-  fi
-}
