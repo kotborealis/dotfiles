@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup ipe_bin ipe $(readlink -f $1) &>/dev/null &

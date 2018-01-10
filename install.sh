@@ -8,3 +8,4 @@ stow xresources
 stow neofetch
 stow sublime
 stow xinitrc
+stow bin
