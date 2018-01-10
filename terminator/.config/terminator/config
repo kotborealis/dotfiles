@@ -34,7 +34,7 @@
     backspace_binding = automatic
     cursor_color = "#c5c8c6"
     delete_binding = automatic
-    font = Roboto Mono 12
+    font = Hack 12
     foreground_color = "#c5c8c6"
     icon_bell = False
     palette = "#2d2d2d:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#d3d0c8:#747369:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#f2f0ec"
@@ -116,8 +116,10 @@
     background_color = "#7a251e"
     background_image = None
     cursor_color = "#ffffff"
+    font = Hack 10
     foreground_color = "#d7c9a7"
     palette = "#000000:#ff3f00:#00bb00:#e7b000:#0072ff:#bb00bb:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0072ae:#ff55ff:#55ffff:#ffffff"
+    use_system_font = False
   [[Tomorrow]]
     background_color = "#ffffff"
     background_image = None
