@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/
+export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/:/home/kotborealis/emsdk:/home/kotborealis/emsdk/clang/fastcomp/build_incoming_64/bin:/home/kotborealis/emsdk/node/4.1.1_64bit/bin:/home/kotborealis/emsdk/emscripten/incoming:/home/kotborealis/emsdk/binaryen/master_64bit_binaryen/bin
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/kotborealis/.oh-my-zsh
@@ -114,9 +114,6 @@ extract () {
     echo "'$1' is not a valid file"
   fi
 }
-
-# mount google drive using ocalmfuse
-mount | grep "${HOME}/mnt/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/mnt/gdrive"
 
 # ssh autocompletion
 h=()
