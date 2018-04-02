@@ -10,3 +10,4 @@ stow sublime
 stow xinitrc
 stow bin
 stow tmux
+stow octave
