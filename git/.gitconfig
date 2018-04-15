@@ -9,3 +9,6 @@
 	autocrlf = input
 [commit]
 	gpgsign = false
+[alias]
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    gud = !git add . && git commit -m \"git gud\"

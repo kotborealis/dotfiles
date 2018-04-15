@@ -28,12 +28,20 @@
 		"нетоковедущих",
 		"заземлителем",
 		"токоведущие",
-		"Контроллепригодность"
+		"Контроллепригодность",
+		"интерполируемой",
+		"расшивка",
+		"Денормализация",
+		"",
+		"заземлители",
+		"заземлитель",
+		"многоэлементными",
+		"токоведущим"
 	],
 	"color_scheme": "Packages/Color Scheme - Default/Sixteen.tmTheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/russian_english.dic",
-	"font_size": 24,
+	"font_size": 23,
 	"ignored_packages":
 	[
 		"Vintage"
