@@ -2,12 +2,12 @@
 
 # https://stackoverflow.com/questions/29936948/ssh-l-forward-multiple-ports
 
-echo -n "-N -R $1:127.0.0.1:$1 " > $HOME/.ssh/sshports.txt
+echo -n "-M 32000 -o \"ServerAliveInterval 30\" -o \"ServerAliveCountMax 3\" -N -R $1:127.0.0.1:$1 " > $HOME/.ssh/sshports.txt
 for ((i=($1+1);i<$2;i++))
 do
-    echo -n "-N -R $i:127.0.0.1:$i " >> $HOME/.ssh/sshports.txt
+    echo -n "-M 32000 -o \"ServerAliveInterval 30\" -o \"ServerAliveCountMax 3\" -N -R $i:127.0.0.1:$i " >> $HOME/.ssh/sshports.txt
 done
 line=$(head -n 1 $HOME/.ssh/sshports.txt)
-cline="ssh "$3" "$line
+cline="autossh "$3" "$line
 echo $cline
 eval $cline
