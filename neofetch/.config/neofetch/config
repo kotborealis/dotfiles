@@ -30,13 +30,13 @@ print_info() {
 
     info "CPU Usage" cpu_usage
     info "Disk" disk
-    # info "Battery" battery
+    info "Battery" battery
     # info "Font" font
     # info "Song" song
     # info "Local IP" local_ip
     # info "Public IP" public_ip
     # info "Users" users
-    # info "Install Date" install_date
+    info "Install Date" install_date
     # info "Locale" locale # This only works on glibc systems.
 
     info line_break
@@ -203,7 +203,7 @@ cpu_cores="logical"
 # C:   'Intel i7-6500U (4) @ 3.1GHz [27.2°C]'
 # F:   'Intel i7-6500U (4) @ 3.1GHz [82.0°F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
-cpu_temp="off"
+cpu_temp="on"
 
 
 # GPU
@@ -267,7 +267,7 @@ refresh_rate="off"
 # Example:
 # on:  'Numix, Adwaita'
 # off: 'Numix [GTK2], Adwaita [GTK3]'
-gtk_shorthand="off"
+gtk_shorthand="on"
 
 
 # Enable/Disable gtk2 Theme / Icons / Font
@@ -386,7 +386,7 @@ install_time="on"
 # Example:
 # 12h: 'Thu 14 Apr 2016 11:50 PM'
 # 24h: 'Thu 14 Apr 2016 23:50'
-install_time_format="12h"
+install_time_format="24h"
 
 
 # Text Colors
@@ -559,7 +559,7 @@ image_backend="w3m"
 # NOTE: 'auto' will pick the best image source for whatever image backend is used.
 #       In ascii mode, distro ascii art will be used and in an image mode, your
 #       wallpaper will be used.
-image_source="/home/kotborealis/.config/neofetch/cirno.png"
+image_source="wallpaper"
 
 
 # Ascii Options
