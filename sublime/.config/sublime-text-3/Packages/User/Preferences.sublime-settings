@@ -48,7 +48,8 @@
 		"Хронометражом",
 		"радиоизлучающих",
 		"радиополигонах",
-		"дефракция"
+		"дефракция",
+		"интерполируемая"
 	],
 	"color_scheme": "Packages/Color Scheme - Default/Sixteen.tmTheme",
 	"default_encoding": "UTF-8",
