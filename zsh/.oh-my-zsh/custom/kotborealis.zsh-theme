@@ -1,6 +1,6 @@
 # AVIT ZSH Theme
 
-PROMPT=' ${_current_dir}'
+PROMPT='${_current_dir}'
 
 local _current_dir="%{$fg_bold[blue]%}%3~%{$reset_color%} "
 local _return_status="%{$fg_bold[red]%}%(?..⍉)%{$reset_color%}"

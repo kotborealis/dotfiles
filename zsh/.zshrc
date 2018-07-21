@@ -2,7 +2,7 @@
 export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/:/home/kotborealis/emsdk:/home/kotborealis/emsdk/clang/fastcomp/build_incoming_64/bin:/home/kotborealis/emsdk/node/4.1.1_64bit/bin:/home/kotborealis/emsdk/emscripten/incoming:/home/kotborealis/emsdk/binaryen/master_64bit_binaryen/bin
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kotborealis/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -86,9 +86,6 @@ zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases
 
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-
 # open using default app
 alias go="xdg-open &>/dev/null"
 
@@ -129,7 +126,9 @@ fi
 alias copy="xclip -sel clip"
 
 # hub for github https://hub.github.com/
-alias git="hub"
+if [ -x "$(command -v hub)" ]; then
+    alias git="hub"
+fi
 
 # view files w/ less
 eval "$(lesspipe)"

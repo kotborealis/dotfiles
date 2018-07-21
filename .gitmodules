@@ -1,0 +1,6 @@
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-autoenv"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-autoenv
+	url = https://github.com/Tarrasch/zsh-autoenv
+[submodule "vim/.vim/plugged/goyo.vim"]
+	path = vim/.vim/plugged/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
