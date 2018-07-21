@@ -130,3 +130,6 @@ alias copy="xclip -sel clip"
 
 # hub for github https://hub.github.com/
 alias git="hub"
+
+# view files w/ less
+eval "$(lesspipe)"
