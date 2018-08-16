@@ -4,3 +4,6 @@
 [submodule "vim/.vim/plugged/goyo.vim"]
 	path = vim/.vim/plugged/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
+[submodule "vim/.vim/plugged/rust.vim"]
+	path = vim/.vim/plugged/rust.vim
+	url = https://github.com/rust-lang/rust.vim

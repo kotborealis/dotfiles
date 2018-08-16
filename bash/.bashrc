@@ -141,3 +141,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# added by travis gem
+[ -f /home/kotborealis/.travis/travis.sh ] && source /home/kotborealis/.travis/travis.sh
