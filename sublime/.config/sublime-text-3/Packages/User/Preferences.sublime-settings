@@ -51,12 +51,26 @@
 		"дефракция",
 		"интерполируемая"
 	],
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
 	"color_scheme": "Packages/Color Scheme - Default/Sixteen.tmTheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/russian_english.dic",
 	"font_size": 23,
 	"ignored_packages":
 	[
+		"LaTeX-cwl",
+		"LaTeXing",
+		"LaTeXTools",
 		"Vintage"
 	],
 	"show_encoding": true,
