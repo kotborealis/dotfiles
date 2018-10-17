@@ -26,6 +26,7 @@
       position = 0
 [profiles]
   [[default]]
+    audible_bell = True
     background_color = "#404552"
     background_darkness = 0.98
     background_type = transparent
