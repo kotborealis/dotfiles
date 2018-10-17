@@ -49,7 +49,10 @@
 		"радиоизлучающих",
 		"радиополигонах",
 		"дефракция",
-		"интерполируемая"
+		"интерполируемая",
+		"катенации",
+		"катенация",
+		"Quartus"
 	],
 	"auto_complete_triggers":
 	[
@@ -65,7 +68,7 @@
 	"color_scheme": "Packages/Color Scheme - Default/Sixteen.tmTheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/russian_english.dic",
-	"font_size": 23,
+	"font_size": 24,
 	"ignored_packages":
 	[
 		"LaTeX-cwl",

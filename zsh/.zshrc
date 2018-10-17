@@ -82,6 +82,11 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 setopt menucomplete
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 
+# Aliases and stuff
+export CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
+alias antlr4='java -jar /usr/local/lib/antlr-4.7.1-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
