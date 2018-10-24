@@ -47,8 +47,11 @@ sudo apt install rofi -y
 echo "Install Java"
 sudo apt install openjdk-8-jre openjdk-8-jdk -y
 
-echo "Codecs"
+echo "Install Codecs"
 sudo apt install ubuntu-restricted-extras -y
+
+echo "Install Gnome tweaks"
+sudo apt install gnome-tweaks -y
 
 echo "Install Chrome"
 sudo apt install libxss1 libappindicator1 libindicator7 -y
