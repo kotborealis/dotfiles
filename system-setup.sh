@@ -27,7 +27,7 @@ echo "Set ZSH as default shell"
 chsh -s $(which zsh)
 
 echo "Install dev tools"
-sudo apt install build-essential g++ automake -y
+sudo apt install build-essential g++ automake htop -y
 
 echo "Install vim"
 sudo apt install vim -y
@@ -77,6 +77,11 @@ echo "Install Docker"
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
+
+echo "Install Node"
+wget https://nodejs.org/dist/v11.0.0/node-v11.0.0-linux-x64.tar.xz
+sudo tar --strip-components=1 -xvf node-v11.0.0-linux-x64.tar.xz -C /usr
+rm node-v11.0.0-linux-x64.tar.xz
 
 echo "Clean up"
 sudo apt autoremove
