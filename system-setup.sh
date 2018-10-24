@@ -1,4 +1,7 @@
-sudo apt update && sudo apt-get dist-upgrade
+sudo apt update && sudo apt-get dist-upgrade -y
+
+echo "Install git"
+sudo apt install git -y
 
 echo "Install wget & curl"
 sudo apt install wget curl -y
@@ -19,9 +22,6 @@ gsettings set org.gnome.desktop.default-applications.terminal exec terminator
 
 echo "Set ZSH as default shell"
 chsh -s $(which zsh)
-
-echo "Install git"
-sudo apt install git -y
 
 echo "Install dev tools"
 sudo apt install build-essential g++ automake -y
