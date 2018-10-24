@@ -3,6 +3,9 @@ sudo apt update && sudo apt-get dist-upgrade -y
 echo "Install git"
 sudo apt install git -y
 
+echo "Install stow"
+sudo apt install stow -y
+
 echo "Install wget & curl"
 sudo apt install wget curl -y
 
