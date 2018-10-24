@@ -30,7 +30,7 @@ echo "Install vim"
 sudo apt install vim -y
 
 echo "Install wine"
-sudo apt install wine -y
+sudo apt install wine-stable -y
 
 echo "Install shit"
 sudo apt install \
