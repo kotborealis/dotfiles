@@ -36,22 +36,22 @@ echo "Install shit"
 sudo apt install \
   octave \
   wine \
-  keepass2 
+  keepass2 -y
 
 echo "Install Java"
-sudo apt install openjdk-8-jre openjdk-8-jdk
+sudo apt install openjdk-8-jre openjdk-8-jdk -y
 
 echo "Codecs"
-sudo apt install ubuntu-restricted-extras
+sudo apt install ubuntu-restricted-extras -y
 
 echo "Install Chrome"
-sudo apt install libxss1 libappindicator1 libindicator7
+sudo apt install libxss1 libappindicator1 libindicator7 -y
 ## 1. downloading last stable package
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 ## 2. installing package
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ## 3. fixing broken dependencies
-sudo apt install -f
+sudo apt install -f -y
 rm google-chrome*.deb # free up space
 
 echo "Install virtualbox"
@@ -67,7 +67,7 @@ sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634
 sudo VBoxManage list extpacks
 
 echo "Install TLP"
-sudo apt-get install tlp tlp-rdw
+sudo apt-get install tlp tlp-rdw -y
 sudo tlp start
 
 echo "Install Docker"
