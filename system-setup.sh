@@ -41,6 +41,9 @@ sudo apt install \
   wine \
   keepass2 -y
 
+echo "Install rofi"
+sudo apt install rofi -y
+
 echo "Install Java"
 sudo apt install openjdk-8-jre openjdk-8-jdk -y
 
