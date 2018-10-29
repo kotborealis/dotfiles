@@ -35,11 +35,11 @@ sudo apt install vim -y
 echo "Install wine"
 sudo apt install wine-stable -y
 
-echo "Install shit"
-sudo apt install \
-  octave \
-  wine \
-  keepass2 -y
+echo "Install octave"
+sudo apt install octave -y
+
+echo "Install keepass2"
+sudo apt install keepass2 -y
 
 echo "Install rofi"
 sudo apt install rofi -y
@@ -84,10 +84,11 @@ curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
 
-echo "Install Node"
-wget https://nodejs.org/dist/v11.0.0/node-v11.0.0-linux-x64.tar.xz
-sudo tar --strip-components=1 -xvf node-v11.0.0-linux-x64.tar.xz -C /usr
-rm node-v11.0.0-linux-x64.tar.xz
+export NODE_V="11.0.0"
+echo "Install Node $NODE_V"
+wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz
+sudo tar --strip-components=1 -xvf node-v$NODE_V-linux-x64.tar.xz -C /usr
+rm node-v$NODE_V-linux-x64.tar.xz
 
 echo "Clean up"
 sudo apt autoremove
