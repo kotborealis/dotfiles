@@ -1,3 +1,4 @@
+echo "Update apt repos & dist-upgrade"
 sudo apt update && sudo apt-get dist-upgrade -y
 
 echo "Install git"
@@ -14,17 +15,6 @@ sudo apt install rar unrar zip unzip p7zip-full p7zip-rar -y
 
 echo "Install Terminal, Shell & such"
 sudo apt install zsh terminator tmux -y
-
-echo "Install oh my zsh"
-
-if [ -d ~/.oh-my-zsh ]; then echo "oh-my-zsh installed!"; else \
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
-
-echo "Set Terminator as default terminal"
-gsettings set org.gnome.desktop.default-applications.terminal exec terminator
-
-echo "Set ZSH as default shell"
-chsh -s $(which zsh)
 
 echo "Install dev tools"
 sudo apt install build-essential g++ automake htop -y
@@ -50,8 +40,10 @@ sudo apt install openjdk-8-jre openjdk-8-jdk -y
 echo "Install Codecs"
 sudo apt install ubuntu-restricted-extras -y
 
-echo "Install Gnome tweaks"
-sudo apt install gnome-tweaks -y
+echo "Install Elementary tweaks"
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+sudo apt update
+sudo apt install elementary-tweaks -y
 
 echo "Install Chrome"
 sudo apt install libxss1 libappindicator1 libindicator7 -y
@@ -89,6 +81,16 @@ echo "Install Node $NODE_V"
 wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz
 sudo tar --strip-components=1 -xvf node-v$NODE_V-linux-x64.tar.xz -C /usr
 rm node-v$NODE_V-linux-x64.tar.xz
+
+echo "Install oh my zsh"
+if [ -d ~/.oh-my-zsh ]; then echo "oh-my-zsh installed!"; else \
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
+
+echo "Set Terminator as default terminal"
+gsettings set org.gnome.desktop.default-applications.terminal exec terminator
+
+echo "Set ZSH as default shell"
+chsh -s $(which zsh)
 
 echo "Clean up"
 sudo apt autoremove
