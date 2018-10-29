@@ -1,3 +1,9 @@
+#!/usr/bin/env bash
+
+# wget https://raw.githubusercontent.com/kotborealis/dotfiles/master/setup_scripts/elementary-os.sh
+# chmod +x elementary-os.sh
+# sudo ./elementary-os.sh
+
 echo "Update apt repos & dist-upgrade"
 sudo apt update && sudo apt-get dist-upgrade -y
 
@@ -93,3 +99,4 @@ chsh -s $(which zsh)
 
 echo "Clean up"
 sudo apt autoremove
+rm -- "$0"
