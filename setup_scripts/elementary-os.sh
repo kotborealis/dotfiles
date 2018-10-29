@@ -47,13 +47,10 @@ sudo apt install elementary-tweaks -y
 
 echo "Install Chrome"
 sudo apt install libxss1 libappindicator1 libindicator7 -y
-## 1. downloading last stable package
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-## 2. installing package
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-## 3. fixing broken dependencies
 sudo apt install -f -y
-rm google-chrome*.deb # free up space
+rm google-chrome*.deb
 
 echo "Install virtualbox"
 # 1. downloading package
@@ -66,6 +63,7 @@ wget http://download.virtualbox.org/virtualbox/5.1.6/Oracle_VM_VirtualBox_Extens
 sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634.vbox-extpack
 # 5. listing installed extension packs
 sudo VBoxManage list extpacks
+rm VirtualBox-5.1.6-110634-Linux_amd64.run
 
 echo "Install TLP"
 sudo apt-get install tlp tlp-rdw -y
@@ -75,6 +73,7 @@ echo "Install Docker"
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
+rm get-docker.sh
 
 export NODE_V="11.0.0"
 echo "Install Node $NODE_V"
