@@ -1,2 +1,10 @@
 #!/bin/bash
-nohup ipe_bin ipe $(readlink -f $1) &>/dev/null &
+
+if [ ! -f ~/.bin/ipe_bin ]; then 
+    wget -O ~/.bin/ipe_bin https://dl.bintray.com/otfried/generic/ipe/7.2/ipe-7.2.7-x86_64.AppImage && chmod +x ~/.bin/ipe_bin
+fi
+
+if [ $# -eq 0 ] 
+    then nohup ipe_bin ipe &>/dev/null &
+    else nohup ipe_bin ipe $(readlink -f $1) &>/dev/null &
+fi
