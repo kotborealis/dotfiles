@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+docker run \
+    --user="$(id -u):$(id -g)" \
+    --net=none \
+    --pid=host \
+    --uts=host \
+    --ipc=host \
+    -v $PWD:/source \
+    -v /tmp:/tmp \
+    --rm kotborealis/patchouli:latest \
+    /usr/bin/pandoc "$@"
