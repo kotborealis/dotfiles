@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+python3 --version
+if [ $? -ne 0 ]; then
+    echo "  !Install python3"
+    apt install python3
+fi
+
+python3 -m pip
+if [ $? -ne 0 ]; then
+    echo "  !Install pip"
+    apt install python3-pip
+fi
+
+python3 -c "import pynput"
+if [ $? -ne 0 ]; then
+    echo "  !Install pynput"
+    python3 -m pip install --user pynput==1.4
+fi
