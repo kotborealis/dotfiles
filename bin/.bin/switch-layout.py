@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+# https://github.com/yamnikov-oleg/switch-layout
+# Thanks! C: 
+
 import subprocess
 
 from pynput import keyboard
