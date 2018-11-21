@@ -59,17 +59,7 @@ sudo apt install -f -y
 rm google-chrome*.deb
 
 echo "Install virtualbox"
-# 1. downloading package
-wget http://download.virtualbox.org/virtualbox/5.1.6/VirtualBox-5.1.6-110634-Linux_amd64.run
-# 2. installing package into /opt
-sudo sh VirtualBox-5.1.6-110634-Linux_amd64.run
-# 3. downloading extension pack
-wget http://download.virtualbox.org/virtualbox/5.1.6/Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634.vbox-extpack
-# 4. install extension pack
-sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634.vbox-extpack
-# 5. listing installed extension packs
-sudo VBoxManage list extpacks
-rm VirtualBox-5.1.6-110634-Linux_amd64.run
+apt install virtualbox
 
 echo "Install TLP"
 sudo apt-get install tlp tlp-rdw -y
