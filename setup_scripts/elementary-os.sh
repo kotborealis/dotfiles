@@ -53,40 +53,40 @@ sudo apt install elementary-tweaks -y
 
 echo "Install Chrome"
 sudo apt install libxss1 libappindicator1 libindicator7 -y
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt install -f -y
-rm google-chrome*.deb
+sudo rm google-chrome*.deb
 
 echo "Install virtualbox"
-apt install virtualbox
+sudo apt-get install virtualbox
 
 echo "Install TLP"
 sudo apt-get install tlp tlp-rdw -y
 sudo tlp start
 
 echo "Install Docker"
-curl -fsSL get.docker.com -o get-docker.sh
-sh get-docker.sh
+sudo curl -fsSL get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
 sudo usermod -aG docker $USER
-rm get-docker.sh
+sudo rm get-docker.sh
 
 export NODE_V="11.0.0"
 echo "Install Node $NODE_V"
-wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz
+sudo wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz
 sudo tar --strip-components=1 -xvf node-v$NODE_V-linux-x64.tar.xz -C /usr
-rm node-v$NODE_V-linux-x64.tar.xz
+sudo rm node-v$NODE_V-linux-x64.tar.xz
 
 echo "Install oh my zsh"
 if [ -d ~/.oh-my-zsh ]; then echo "oh-my-zsh installed!"; else \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
 
 echo "Set Terminator as default terminal"
-gsettings set org.gnome.desktop.default-applications.terminal exec terminator
+sudo gsettings set org.gnome.desktop.default-applications.terminal exec terminator
 
 echo "Set ZSH as default shell"
 chsh -s $(which zsh)
 
 echo "Clean up"
 sudo apt autoremove
-rm -- "$0"
+sudo rm -- "$0"
