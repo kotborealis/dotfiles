@@ -1,5 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/:/home/kotborealis/emsdk:/home/kotborealis/emsdk/clang/fastcomp/build_incoming_64/bin:/home/kotborealis/emsdk/node/4.1.1_64bit/bin:/home/kotborealis/emsdk/emscripten/incoming:/home/kotborealis/emsdk/binaryen/master_64bit_binaryen/bin
+export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
