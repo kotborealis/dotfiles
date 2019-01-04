@@ -12,7 +12,6 @@
 		"биматричные",
 		"одношаговые",
 		"Неатнагонистические",
-		"",
 		"неантагонистическую",
 		"бескоалиционную",
 		"биматричной",
@@ -32,7 +31,6 @@
 		"интерполируемой",
 		"расшивка",
 		"Денормализация",
-		"",
 		"заземлители",
 		"заземлитель",
 		"многоэлементными",
@@ -40,8 +38,6 @@
 		"контролепригодности",
 		"Контролепригодность",
 		"межкомпонентных",
-		"",
-		"",
 		"подмодулями",
 		"подмодулям",
 		"подмодули",
@@ -52,7 +48,8 @@
 		"интерполируемая",
 		"катенации",
 		"катенация",
-		"Quartus"
+		"Quartus",
+		"трансверсальности"
 	],
 	"auto_complete_triggers":
 	[
@@ -67,8 +64,8 @@
 	],
 	"color_scheme": "Packages/Color Scheme - Default/Sixteen.tmTheme",
 	"default_encoding": "UTF-8",
-	"dictionary": "Packages/russian_english.dic",
-	"font_size": 11,
+	"dictionary": "Packages/User/Russian-English Bilingual.dic",
+	"font_size": 13,
 	"ignored_packages":
 	[
 		"LaTeX-cwl",
@@ -77,6 +74,7 @@
 		"Vintage"
 	],
 	"show_encoding": true,
+	"spell_check": true,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
