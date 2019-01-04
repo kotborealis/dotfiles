@@ -1,4 +1,3 @@
-echo "Stow!"
 stow bash
 stow git
 stow zsh
@@ -11,3 +10,5 @@ stow xinitrc
 stow bin
 stow tmux
 stow octave
+
+./setup_scripts/plug.vim.sh

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# wget https://raw.githubusercontent.com/kotborealis/dotfiles/master/setup_scripts/elementary-os.sh
-# chmod +x elementary-os.sh
-# sudo ./elementary-os.sh
+# wget https://raw.githubusercontent.com/kotborealis/dotfiles/master/setup_scripts/debian-terminal.sh
+# chmod +x debian-terminal.sh
+# sudo ./debian-terminal.sh
 
 echo "Update apt repos & dist-upgrade"
 sudo apt update && sudo apt-get dist-upgrade -y
@@ -43,31 +43,6 @@ sudo apt install rofi -y
 echo "Install Java"
 sudo apt install openjdk-8-jre openjdk-8-jdk -y
 
-echo "Install Codecs"
-sudo apt install ubuntu-restricted-extras -y
-
-echo "Install Elementary tweaks"
-sudo add-apt-repository ppa:philip.scott/elementary-tweaks
-sudo apt update
-sudo apt install elementary-tweaks -y
-
-echo "Install Chrome"
-sudo apt install libxss1 libappindicator1 libindicator7 -y
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt install -f -y
-sudo rm google-chrome*.deb
-
-echo "Install TLP"
-sudo apt-get install tlp tlp-rdw -y
-sudo tlp start
-
-echo "Install Docker"
-sudo curl -fsSL get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker $USER
-sudo rm get-docker.sh
-
 export NODE_V="11.0.0"
 echo "Install Node $NODE_V"
 sudo wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz
@@ -77,9 +52,6 @@ sudo rm node-v$NODE_V-linux-x64.tar.xz
 echo "Install oh my zsh"
 if [ -d ~/.oh-my-zsh ]; then echo "oh-my-zsh installed!"; else \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
-
-echo "Set Terminator as default terminal"
-sudo gsettings set org.gnome.desktop.default-applications.terminal exec terminator
 
 echo "Set ZSH as default shell"
 chsh -s $(which zsh)
