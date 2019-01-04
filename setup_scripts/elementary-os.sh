@@ -43,6 +43,10 @@ sudo apt install rofi -y
 echo "Install Java"
 sudo apt install openjdk-8-jre openjdk-8-jdk -y
 
+echo "Install Python & Pip"
+    sudo apt install python3 python3-pip
+fi
+
 echo "Install Codecs"
 sudo apt install ubuntu-restricted-extras -y
 
