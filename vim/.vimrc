@@ -26,6 +26,7 @@ set mouse=a
 set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
+set noswapfile
 
 let base16colorspace=256  " Access colors present in 256 colorspace
 
