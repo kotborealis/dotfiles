@@ -10,5 +10,7 @@ stow xinitrc
 stow bin
 stow tmux
 stow octave
+stow zathura
 
 ./setup_scripts/plug.vim.sh
+./setup_scripts/base16.sh

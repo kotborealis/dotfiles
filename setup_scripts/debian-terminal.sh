@@ -43,6 +43,9 @@ sudo apt install rofi -y
 echo "Install Java"
 sudo apt install openjdk-8-jre openjdk-8-jdk -y
 
+echo "Install Python & Pip"
+sudo apt install python3 python3-pip
+
 export NODE_V="11.0.0"
 echo "Install Node $NODE_V"
 sudo wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz

@@ -1,0 +1,8 @@
+[
+    { "keys": ["ctrl+с"], "command": "copy" },
+{ "keys": ["ctrl+ч"], "command": "cut" },
+{ "keys": ["ctrl+м"], "command": "paste" },
+{ "keys": ["ctrl+я"], "command": "undo" },
+{ "keys": ["ctrl+shift+я"], "command": "redo" },
+{ "keys": ["ctrl+ы"], "command": "save" },
+]

@@ -40,8 +40,14 @@ sudo apt install keepass2 -y
 echo "Install rofi"
 sudo apt install rofi -y
 
+echo "Install zathura"
+sudo apt install zathura -y
+
 echo "Install Java"
 sudo apt install openjdk-8-jre openjdk-8-jdk -y
+
+echo "Install Python & Pip"
+sudo apt install python3 python3-pip -y
 
 echo "Install Codecs"
 sudo apt install ubuntu-restricted-extras -y
@@ -57,9 +63,6 @@ sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt install -f -y
 sudo rm google-chrome*.deb
-
-echo "Install virtualbox"
-sudo apt-get install virtualbox
 
 echo "Install TLP"
 sudo apt-get install tlp tlp-rdw -y
