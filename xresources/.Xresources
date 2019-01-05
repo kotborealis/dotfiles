@@ -1,9 +1,1 @@
 Xft.dpi: 165
-
-! Rofi theme
-rofi.color-enabled: true
-rofi.color-window: #404552, #404552, #404552
-rofi.color-normal: #404552, #c5c8c6, #404552, #c5c8c6, #2d2d2d
-rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
-rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
-
