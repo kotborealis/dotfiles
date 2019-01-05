@@ -1,12 +1,11 @@
 #! /usr/bin/env bash
 
+# shell
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+pip3 install base16-shell-preview
 
-sudo pip3 install base16-shell-preview
-
-git clone https://github.com/AuditeMarlow/base16-manager ~/.config/base16-manager
-cd ~/.config/base16-manager && sudo make install
-base16-manager install chriskempson/base16-shell
-base16-manager install chriskempson/base16-vim
-base16-manager install 0xdec/base16-rofi
-base16-manager install nicodebo/base16-zathura
+# rofi
+git clone https://github.com/0xdec/base16-rofi.git ~/.config/rofi/base16-themes/
+mkdir -p ~/.local/share/rofi/
+mv ~/.config/rofi/base16-themes/themes ~/.local/share/rofi/
+rm -rf ~/.config/rofi/base16-themes/
