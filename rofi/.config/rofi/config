@@ -1,3 +1,0 @@
-rofi.combi-modi:    widnow,drun,ssh
-rofi.theme:         ./themes/base16-tomorrow-night
-rofi.modi:          combi

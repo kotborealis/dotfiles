@@ -1,0 +1,7 @@
+@import "base16-tomorrow-night"
+
+configuration {
+    theme:          "my";
+    combi-modi:     "window,drun,ssh";
+    show-icons: true;
+}
