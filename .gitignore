@@ -1,4 +1,6 @@
 vim/.vim/plugged/*
 vim/.vim/.netrwhist
 vim/.vim/colorscheme.vim
+rofi/.config/rofi/themes
+rofi/.config/rofi/base16-themes
 sublime/.config/sublime-text-3/Packages
