@@ -23,8 +23,4 @@ set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
 
-" call plug#begin('~/.vim/plugged')
-" Plug 'junegunn/goyo.vim'
-" Plug 'arrufat/vala.vim'
-" Plug 'rust-lang/rust.vim'
-" call plug#end()
+Plug 'chriskempson/base16-vim'
