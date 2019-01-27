@@ -65,7 +65,7 @@
 	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-tomorrow-night.tmTheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/User/Russian-English Bilingual.dic",
-	"font_size": 13,
+	"font_size": 9,
 	"ignored_packages":
 	[
 		"LaTeX-cwl",
@@ -75,6 +75,6 @@
 	],
 	"show_encoding": true,
 	"spell_check": true,
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

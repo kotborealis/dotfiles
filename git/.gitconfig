@@ -11,3 +11,4 @@
 [alias]
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     gud = !git add . && git commit -m \"git gud\"
+    fire = !git add . && git commit -m \"git gud\" && git push
