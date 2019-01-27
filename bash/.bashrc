@@ -12,6 +12,9 @@ case $- in
       *) return;;
 esac
 
+# 256 colors
+export TERM=xterm-256color
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \

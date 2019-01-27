@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/
 
+export TERM=xterm-256color
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
