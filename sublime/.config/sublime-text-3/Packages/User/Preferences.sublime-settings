@@ -65,7 +65,7 @@
 	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-tomorrow.tmTheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/User/Russian-English Bilingual.dic",
-	"font_size": 16,
+	"font_size": 19,
 	"ignored_packages":
 	[
 		"LaTeX-cwl",
