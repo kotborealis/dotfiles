@@ -147,3 +147,5 @@ fi
 
 # view files w/ less
 eval "$(lesspipe)"
+
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}

@@ -2,6 +2,7 @@
   borderless = True
   suppress_multiple_term_dialog = True
 [keybindings]
+  new_tab = <Primary><Shift>t
 [layouts]
   [[default]]
     [[[child1]]]
