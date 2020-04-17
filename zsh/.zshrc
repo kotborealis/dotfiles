@@ -148,4 +148,16 @@ fi
 # view files w/ less
 eval "$(lesspipe)"
 
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
+ZSH_TMUX_AUTOSTART=true;
+
+[[ ! -z $TMUX ]]  && { 
+    ZSH_TMUX_AUTOSTART=false
+}
+
+if ps -q $PPID | grep -q java; then
+    ZSH_TMUX_AUTOSTART=false;
+fi
+
+[[ $ZSH_TMUX_AUTOSTART == true ]] && {
+    tmux attach || exec tmux new-session;
+}
