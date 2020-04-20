@@ -164,8 +164,6 @@ if [[ $ZSH_TMUX_AUTOSTART == true ]]; && {
       tmux new-session -d;
     fi;
     TMUX_TERMINAL_SESSION_INSTANCE=$(uuidgen);
-    echo "NEW SESSION $TMUX_TERMINAL_SESSION_INSTANCE";
     tmux new-session -t 0 -s $TMUX_TERMINAL_SESSION_INSTANCE;
-    echo "done!";
     tmux kill-session -t $TMUX_TERMINAL_SESSION_INSTANCE;
 }
