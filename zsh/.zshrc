@@ -158,6 +158,14 @@ if ps -q $PPID | grep -q java; then
     ZSH_TMUX_AUTOSTART=false;
 fi
 
-[[ $ZSH_TMUX_AUTOSTART == true ]] && {
-    tmux attach || exec tmux new-session;
+if [[ $ZSH_TMUX_AUTOSTART == true ]]; && {
+    tmux has-session -t 0 2>/dev/null;
+    if [ $? != 0 ]; then
+      tmux new-session -d;
+    fi;
+    TMUX_TERMINAL_SESSION_INSTANCE=$(uuidgen);
+    echo "NEW SESSION $TMUX_TERMINAL_SESSION_INSTANCE";
+    tmux new-session -t 0 -s $TMUX_TERMINAL_SESSION_INSTANCE;
+    echo "done!";
+    tmux kill-session -t $TMUX_TERMINAL_SESSION_INSTANCE;
 }
