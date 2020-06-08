@@ -12,6 +12,10 @@ case $- in
       *) return;;
 esac
 
+if [ -t 1 ]; then
+    exec zsh
+fi
+
 # 256 colors
 export TERM=xterm-256color
 
