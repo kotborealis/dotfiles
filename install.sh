@@ -3,10 +3,9 @@ stow git
 stow zsh
 stow vim
 stow terminator
-stow xresources
+stow xserver
 stow neofetch
 stow sublime
-stow xinitrc
 stow bin
 stow tmux
 stow octave
