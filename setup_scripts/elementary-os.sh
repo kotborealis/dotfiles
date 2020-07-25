@@ -97,3 +97,7 @@ sudo rm -- "$0"
 echo "Install dotfiles"
 git clone https://github.com/kotborealis/dotfiles ~/dotfiles
 bash ~/dotfiles/install.sh
+
+echo "Setup autostart for switch-layout"
+mkdir -p ~/.config/autostart/
+ln -sf $(pwd)/autostart/.config/autostart/switch-layout.desktop ~/.config/autostart/switch-layout.desktop

@@ -92,9 +92,6 @@ setopt menucomplete
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 
 # Aliases and stuff
-export CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
-alias antlr4='java -jar /usr/local/lib/antlr-4.7.1-complete.jar'
-alias grun='java org.antlr.v4.gui.TestRig'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -168,8 +165,15 @@ if [[ $ZSH_TMUX_AUTOSTART == true ]]; && {
     tmux kill-session -t $TMUX_TERMINAL_SESSION_INSTANCE;
 }
 
+# Fix home/end/delete keys
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 bindkey  "^[[1~"  beginning-of-line
 bindkey  "^[[4~"  end-of-line
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY

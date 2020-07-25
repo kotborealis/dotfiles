@@ -12,9 +12,7 @@ stow octave
 stow zathura
 stow rofi
 
-mkdir -p ~/.config/autostart/
-ln -sf $(pwd)/autostart/.config/autostart/switch-layout.desktop ~/.config/autostart/switch-layout.desktop
-ln -sf $(pwd)/autostart/.config/autostart/Telegram.desktop ~/.config/autostart/Telegram.desktop
-
 ./setup_scripts/plug.vim.sh
 ./setup_scripts/base16.sh
+
+sudo chown -R kotborealis:kotborealis ~
