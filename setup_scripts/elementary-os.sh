@@ -93,3 +93,7 @@ chsh -s $(which zsh)
 echo "Clean up"
 sudo apt autoremove
 sudo rm -- "$0"
+
+echo "Install dotfiles"
+git clone https://github.com/kotborealis/dotfiles ~/dotfiles
+bash ~/dotfiles/install.sh
