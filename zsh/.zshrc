@@ -167,3 +167,9 @@ if [[ $ZSH_TMUX_AUTOSTART == true ]]; && {
     tmux new-session -t 0 -s $TMUX_TERMINAL_SESSION_INSTANCE;
     tmux kill-session -t $TMUX_TERMINAL_SESSION_INSTANCE;
 }
+
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
+bindkey  "^[[1~"  beginning-of-line
+bindkey  "^[[4~"  end-of-line
