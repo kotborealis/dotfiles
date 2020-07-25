@@ -101,3 +101,10 @@ bash ~/dotfiles/install.sh
 echo "Setup autostart for switch-layout"
 mkdir -p ~/.config/autostart/
 ln -sf $(pwd)/autostart/.config/autostart/switch-layout.desktop ~/.config/autostart/switch-layout.desktop
+
+echo "Edit lightdm"
+sudo sh -c ' echo "pre-stop script
+    pkill --oldest chrome
+    pkill --oldest spotify
+    sleep 2
+end script" >> /etc/init/lightdm.conf'
