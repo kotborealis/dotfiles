@@ -147,15 +147,17 @@ eval "$(lesspipe)"
 
 ZSH_TMUX_AUTOSTART=true;
 
-[[ ! -z $TMUX ]]  && { 
+[[ ! -z $TMUX ]]&& { 
     ZSH_TMUX_AUTOSTART=false
 }
 
-if ps -q $PPID | grep -q java; then
-    ZSH_TMUX_AUTOSTART=false;
-fi
+ps -q $PPID | grep -q java
 
-if [[ $ZSH_TMUX_AUTOSTART == true ]]; && {
+[[ $? -eq 0 ]] && {
+    ZSH_TMUX_AUTOSTART=false
+}
+
+[[ $ZSH_TMUX_AUTOSTART == true ]] && {
     tmux has-session -t 0 2>/dev/null;
     if [ $? != 0 ]; then
       tmux new-session -d;
