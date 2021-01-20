@@ -5,7 +5,6 @@ docker run \
     --net=none \
     --pid=host \
     --uts=host \
-    --ipc=host \
     -v $PWD:/source \
     -v /tmp:/tmp \
     --rm kotborealis/patchouli:latest \
