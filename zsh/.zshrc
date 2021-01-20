@@ -1,9 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/:$HOME/balena/balena-cli/
+export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.bin/
 
 export TERM=xterm-256color
-
-export CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -184,3 +182,5 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000
 setopt SHARE_HISTORY
+
+prompt pure
