@@ -53,7 +53,8 @@
 		"нейросетевые",
 		"многоагентные",
 		"когнитолог",
-		"неформализованности"
+		"неформализованности",
+		"Комплесификация"
 	],
 	"auto_complete_triggers":
 	[
@@ -69,7 +70,7 @@
 	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"dictionary": "Packages/User/Russian-English Bilingual.dic",
-	"font_size": 19,
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"LaTeX-cwl",
