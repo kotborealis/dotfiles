@@ -7,3 +7,6 @@
 [submodule "vim/.vim/plugged/rust.vim"]
 	path = vim/.vim/plugged/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "zsh/.zsh/pure"]
+	path = zsh/.zsh/pure
+	url = https://github.com/sindresorhus/pure
