@@ -74,7 +74,7 @@ sudo sh get-docker.sh
 sudo usermod -aG docker $USER
 sudo rm get-docker.sh
 
-export NODE_V="11.0.0"
+export NODE_V="14.10.1"
 echo "Install Node $NODE_V"
 sudo wget https://nodejs.org/dist/v$NODE_V/node-v$NODE_V-linux-x64.tar.xz
 sudo tar --strip-components=1 -xvf node-v$NODE_V-linux-x64.tar.xz -C /usr
