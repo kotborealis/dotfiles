@@ -31,3 +31,6 @@ set noswapfile
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 colorscheme base16-tomorrow-night
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
