@@ -15,4 +15,4 @@ stow rofi
 ./setup_scripts/plug.vim.sh
 ./setup_scripts/base16.sh
 
-sudo chown -R kotborealis:kotborealis ~
+sudo chown -R $(whoami):$(id -Gn | cut -d " " -f1) ~
