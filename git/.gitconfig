@@ -12,6 +12,14 @@
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     gud = !git add . && git commit -m \"git gud\"
     fire = !git add . && git commit -m \"git gud\" && git push
+    fwl = push --force-with-lease
+    amend = commit --amend --no-edit
+    reword = commit --amend
+    edit = !echo "Use git reword"
+    last = log --name-status HEAD^..HEAD
+    rf = review -F
+    rfy = review -Fy
+    remaster = !git fetch origin master && git rebase origin/master
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
